@@ -29,7 +29,7 @@ TODO: Write a project description
 Attribute  | Options                   | Default             | Description
 ---        | ---                       | ---                 | ---
 `foo`      | *string*                  | `bar`               | Lorem ipsum
-`bar`      | `abc`, `def`, `ghi` 		| `foo`               | Lorem ipsum
+`bar`      | `abc`, `def`, `ghi` 	   | `foo`               | Lorem ipsum
 `height`   | *int*                     | `100`               | Lorem ipsum
 
 
@@ -43,8 +43,8 @@ Attribute  | Options                   | Default             | Description
 
 ## History
 
-* v0.1.0 February 30, 2013
-	* Something happened
+* v0.0.1 August 19, 2013
+	* Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
 
 ## License
 
