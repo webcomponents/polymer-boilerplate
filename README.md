@@ -4,6 +4,12 @@ TODO: Write a project description
 
 > Maintained by [Your Name](https://github.com/yourname).
 
+## Demo
+
+![My Element]()
+
+> [Check it live](http://customelements.github.io/boilerplate-element).
+
 ## Usage
 
 1. Import Web Components' polyfill:
@@ -20,7 +26,7 @@ TODO: Write a project description
 
 3. Start using it!
 
-	```xml
+	```html
 	<my-element></my-element>
 	```
 
