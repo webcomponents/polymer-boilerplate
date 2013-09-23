@@ -4,7 +4,7 @@
   "description": "my-element web component with Polymer polyfill",
   "main": "index.html",
   "scripts": {
-    "test": "grunt jasmine"
+    "test": ""
   },
   "repository": {
     "type": "git",
