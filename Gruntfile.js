@@ -18,21 +18,10 @@ module.exports = function(grunt) {
         'src/*.js',
         'spec/*.js'
       ]
-    },
-    jasmine:{
-      src : 'src/*.js',
-      options : {
-        specs : 'spec/*.js'
-      }
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-jasmine');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
-  return grunt.registerTask('specs', [
-    'jshint',
-    'jasmine'
-  ]);
 };
