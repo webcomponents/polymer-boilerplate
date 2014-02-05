@@ -1,0 +1,19 @@
+{
+	"name": "my-element",
+	"version": "0.0.0",
+	"description": "TODO: Write a project description",
+	"author": "TODO: Write your name",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/WebComponentsOrg/element-boilerplate"
+	},
+	"bugs": {
+		"url": "https://github.com/WebComponentsOrg/element-boilerplate/issues"
+	},
+	"devDependencies": {
+		"grunt": "~0.4.1",
+		"grunt-contrib-connect": "~0.5.0",
+		"grunt-cli": "~0.1.9"
+	}
+}
