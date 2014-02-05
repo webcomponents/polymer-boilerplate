@@ -12,29 +12,29 @@ TODO: Write a project description
 
 1. Import Web Components' polyfill:
 
-	```html
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.4/platform.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.4/polymer.js"></script>
-	```
+    ```html
+    <script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.4/platform.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.4/polymer.js"></script>
+    ```
 
 2. Import Custom Element:
 
-	```html
-	<link rel="import" href="src/my-element.html">
-	```
+    ```html
+    <link rel="import" href="src/my-element.html">
+    ```
 
 3. Start using it!
 
-	```html
-	<my-element></my-element>
-	```
+    ```html
+    <my-element></my-element>
+    ```
 
 ## Options
 
 Attribute  | Options                   | Default             | Description
 ---        | ---                       | ---                 | ---
 `foo`      | *string*                  | `bar`               | Lorem ipsum
-`bar`      | `abc`, `def`, `ghi` 	   | `foo`               | Lorem ipsum
+`bar`      | `abc`, `def`, `ghi`       | `foo`               | Lorem ipsum
 `height`   | *int*                     | `100`               | Lorem ipsum
 
 
@@ -49,7 +49,7 @@ Attribute  | Options                   | Default             | Description
 ## History
 
 * v0.0.1 August 19, 2013
-	* Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
+    * Started project using [boilerplate-element](https://github.com/customelements/boilerplate-element)
 
 ## License
 

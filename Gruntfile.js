@@ -1,15 +1,15 @@
 module.exports = function(grunt) {
 
-	grunt.initConfig({
-		connect: {
-			demo: {
-				options: {
-					keepalive: true
-				}
-			}
-		}
-	});
+    grunt.initConfig({
+        connect: {
+            demo: {
+                options: {
+                    keepalive: true
+                }
+            }
+        }
+    });
 
-	grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
 };
