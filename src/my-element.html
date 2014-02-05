@@ -1,13 +1,12 @@
-<polymer-element name="my-element"
-		 attributes="test">
+<polymer-element name="my-element" attributes="name">
 
 	<template>
-		{{test}}
+		<p>Hello <strong>{{name}}</strong></p>
 	</template>
 
 	<script>
 		Polymer('my-element', {
-			test: 'Test'
+			name: 'World'
 		});
 	</script>
 
