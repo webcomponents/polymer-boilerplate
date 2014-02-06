@@ -6,7 +6,7 @@ TODO: Write a project description
 
 ## Demo
 
-> [Check it live](http://WebComponentsOrg.github.io/element-boilerplate).
+> [Check it live](http://webcomponents.github.io/element-boilerplate).
 
 ## Usage
 
@@ -70,7 +70,7 @@ Attribute  | Options                   | Default             | Description
 
 ## History
 
-For detailed changelog, check [Releases](https://github.com/WebComponentsOrg/element-boilerplate/releases).
+For detailed changelog, check [Releases](https://github.com/webcomponents/element-boilerplate/releases).
 
 ## License
 

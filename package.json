@@ -6,10 +6,10 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/WebComponentsOrg/element-boilerplate"
+        "url": "https://github.com/webcomponents/element-boilerplate"
     },
     "bugs": {
-        "url": "https://github.com/WebComponentsOrg/element-boilerplate/issues"
+        "url": "https://github.com/webcomponents/element-boilerplate/issues"
     },
     "devDependencies": {
         "grunt": "~0.4.1",
