@@ -1,0 +1,26 @@
+{
+  "name": "element-boilerplate",
+  "version": "0.0.0",
+  "homepage": "https://github.com/webcomponents/element-boilerplate",
+  "authors": [
+    "TODO: Write your name"
+  ],
+  "description": "TODO: Write a project description",
+  "main": "src/my-element.html",
+  "keywords": [
+    "web-component",
+    "web-components"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "platform": "Polymer/platform#~0.2.0",
+    "polymer": "Polymer/polymer#~0.2.0"
+  }
+}
