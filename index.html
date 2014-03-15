@@ -5,15 +5,22 @@
     <title>&lt;my-element&gt;</title>
 
     <!-- Importing Web Component's Polyfill -->
-    <script src="bower_components/platform/platform.js"></script>
+    <script src="components/platform/platform.js"></script>
 
     <!-- Importing Custom Elements -->
-    <link rel="import" href="src/my-element.html">
+    <link rel="import" href="src/github-search.html">
 </head>
 <body>
 
     <!-- Using Custom Elements -->
-    <my-element name="Zeno"></my-element>
+
+    <github-search query="commonjs" type="issues"></github-search>
+
+    <github-search query="bootstrap" type="repos"></github-search>
+
+    <github-search query="import" type="code"></github-search>
+
+    <github-search query="paul" type="users"></github-search>
 
 </body>
 </html>

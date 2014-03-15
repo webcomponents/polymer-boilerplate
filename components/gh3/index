@@ -1,0 +1,1366 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    
+    <title>k33g/gh3 · GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144.png" />
+    <meta property="fb:app_id" content="1401488693436528"/>
+
+      <meta content="@github" name="twitter:site" /><meta content="summary" name="twitter:card" /><meta content="k33g/gh3" name="twitter:title" /><meta content="gh3 - Client-side Javascript API wrapper for GitHub API V3" name="twitter:description" /><meta content="https://0.gravatar.com/avatar/03c0a459fd631e867bade2cc95517a4f?d=https%3A%2F%2Fidenticons.github.com%2F2177c42078d80c871b1d7d102a01ae5c.png&amp;r=x&amp;s=400" name="twitter:image:src" />
+<meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="https://0.gravatar.com/avatar/03c0a459fd631e867bade2cc95517a4f?d=https%3A%2F%2Fidenticons.github.com%2F2177c42078d80c871b1d7d102a01ae5c.png&amp;r=x&amp;s=400" property="og:image" /><meta content="k33g/gh3" property="og:title" /><meta content="https://github.com/k33g/gh3" property="og:url" /><meta content="gh3 - Client-side Javascript API wrapper for GitHub API V3" property="og:description" />
+
+    <link rel="assets" href="https://github.global.ssl.fastly.net/">
+    <link rel="conduit-xhr" href="https://ghconduit.com:25035/">
+    <link rel="xhr-socket" href="/_sockets" />
+
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="selected-link" value="repo_source" data-pjax-transient />
+    <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="collector-cdn.github.com" name="octolytics-script-host" /><meta content="github" name="octolytics-app-id" /><meta content="569C1A57:4032:1AD3A8E:5324A459" name="octolytics-dimension-request_id" />
+    
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="https://github.global.ssl.fastly.net/favicon.ico" />
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="VlEwRWbKl8wxkibRvojO4P/cdEU20NkCo7O3ZLbulZA=" name="csrf-token" />
+
+    <link href="https://github.global.ssl.fastly.net/assets/github-d9c478ed7e87eebc36430a1efc4e84b17e65df06.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="https://github.global.ssl.fastly.net/assets/github2-1f57c0abc60be1b966fe0cdd45e4a656a8f8a469.css" media="all" rel="stylesheet" type="text/css" />
+    
+
+
+      <script crossorigin="anonymous" src="https://github.global.ssl.fastly.net/assets/frameworks-55976bc637c425207bc6e52d7ac4c125773713de.js" type="text/javascript"></script>
+      <script async="async" crossorigin="anonymous" src="https://github.global.ssl.fastly.net/assets/github-59c1229021d04ba714d869cf0ab18c2ff7a289ab.js" type="text/javascript"></script>
+      
+      <meta http-equiv="x-pjax-version" content="44c5c3cda0d9fbf11f6aacd6119c08a1">
+
+      
+  <meta name="description" content="gh3 - Client-side Javascript API wrapper for GitHub API V3" />
+
+  <meta content="491848" name="octolytics-dimension-user_id" /><meta content="k33g" name="octolytics-dimension-user_login" /><meta content="5180875" name="octolytics-dimension-repository_id" /><meta content="k33g/gh3" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="5180875" name="octolytics-dimension-repository_network_root_id" /><meta content="k33g/gh3" name="octolytics-dimension-repository_network_root_nwo" />
+  <link href="https://github.com/k33g/gh3/commits/master.atom" rel="alternate" title="Recent Commits to gh3:master" type="application/atom+xml" />
+
+  </head>
+
+
+  <body class="logged_out  env-production  vis-public">
+    <a href="#start-of-content" class="accessibility-aid js-skip-to-content">Skip to content</a>
+    <div class="wrapper">
+      
+      
+      
+      
+
+
+      
+      <div class="header header-logged-out">
+  <div class="container clearfix">
+
+    <a class="header-logo-wordmark" href="https://github.com/">
+      <span class="mega-octicon octicon-logo-github"></span>
+    </a>
+
+    <div class="header-actions">
+        <a class="button primary" href="/join">Sign up</a>
+      <a class="button signin" href="/login?return_to=%2Fk33g%2Fgh3">Sign in</a>
+    </div>
+
+    <div class="command-bar js-command-bar  in-repository">
+
+      <ul class="top-nav">
+          <li class="explore"><a href="/explore">Explore</a></li>
+        <li class="features"><a href="/features">Features</a></li>
+          <li class="enterprise"><a href="https://enterprise.github.com/">Enterprise</a></li>
+          <li class="blog"><a href="/blog">Blog</a></li>
+      </ul>
+        <form accept-charset="UTF-8" action="/search" class="command-bar-form" id="top_search_form" method="get">
+
+<input type="text" data-hotkey="/ s" name="q" id="js-command-bar-field" placeholder="Search or type a command" tabindex="1" autocapitalize="off"
+    
+    
+      data-repo="k33g/gh3"
+      data-branch="master"
+      data-sha="8e2146c732e2cf3c25d5ccb2adb76acb96cf68bb"
+  >
+
+    <input type="hidden" name="nwo" value="k33g/gh3" />
+
+    <div class="select-menu js-menu-container js-select-menu search-context-select-menu">
+      <span class="minibutton select-menu-button js-menu-target" role="button" aria-haspopup="true">
+        <span class="js-select-button">This repository</span>
+      </span>
+
+      <div class="select-menu-modal-holder js-menu-content js-navigation-container" aria-hidden="true">
+        <div class="select-menu-modal">
+
+          <div class="select-menu-item js-navigation-item js-this-repository-navigation-item selected">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" class="js-search-this-repository" name="search_target" value="repository" checked="checked" />
+            <div class="select-menu-item-text js-select-button-text">This repository</div>
+          </div> <!-- /.select-menu-item -->
+
+          <div class="select-menu-item js-navigation-item js-all-repositories-navigation-item">
+            <span class="select-menu-item-icon octicon octicon-check"></span>
+            <input type="radio" name="search_target" value="global" />
+            <div class="select-menu-item-text js-select-button-text">All repositories</div>
+          </div> <!-- /.select-menu-item -->
+
+        </div>
+      </div>
+    </div>
+
+  <span class="help tooltipped tooltipped-s" aria-label="Show command bar help">
+    <span class="octicon octicon-question"></span>
+  </span>
+
+
+  <input type="hidden" name="ref" value="cmdform">
+
+</form>
+    </div>
+
+  </div>
+</div>
+
+
+
+      <div id="start-of-content" class="accessibility-aid"></div>
+          <div class="site" itemscope itemtype="http://schema.org/WebPage">
+    
+    <div class="pagehead repohead instapaper_ignore readability-menu">
+      <div class="container">
+        
+
+<ul class="pagehead-actions">
+
+
+  <li>
+    <a href="/login?return_to=%2Fk33g%2Fgh3"
+    class="minibutton with-count js-toggler-target star-button tooltipped tooltipped-n"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <span class="octicon octicon-star"></span>Star
+  </a>
+
+    <a class="social-count js-social-count" href="/k33g/gh3/stargazers">
+      125
+    </a>
+
+  </li>
+
+    <li>
+      <a href="/login?return_to=%2Fk33g%2Fgh3"
+        class="minibutton with-count js-toggler-target fork-button tooltipped tooltipped-n"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <span class="octicon octicon-git-branch"></span>Fork
+      </a>
+      <a href="/k33g/gh3/network" class="social-count">
+        22
+      </a>
+    </li>
+</ul>
+
+        <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+          <span class="repo-label"><span>public</span></span>
+          <span class="mega-octicon octicon-repo"></span>
+          <span class="author">
+            <a href="/k33g" class="url fn" itemprop="url" rel="author"><span itemprop="title">k33g</span></a>
+          </span>
+          <span class="repohead-name-divider">/</span>
+          <strong><a href="/k33g/gh3" class="js-current-repository js-repo-home-link">gh3</a></strong>
+
+          <span class="page-context-loader">
+            <img alt="Octocat-spinner-32" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+          </span>
+
+        </h1>
+      </div><!-- /.container -->
+    </div><!-- /.repohead -->
+
+    <div class="container">
+      <div class="repository-with-sidebar repo-container new-discussion-timeline js-new-discussion-timeline with-full-navigation ">
+        <div class="repository-sidebar clearfix">
+            
+
+<div class="sunken-menu vertical-right repo-nav js-repo-nav js-repository-container-pjax js-octicon-loaders">
+  <div class="sunken-menu-contents">
+    <ul class="sunken-menu-group">
+      <li class="tooltipped tooltipped-w" aria-label="Code">
+        <a href="/k33g/gh3" aria-label="Code" class="selected js-selected-navigation-item sunken-menu-item" data-gotokey="c" data-pjax="true" data-selected-links="repo_source repo_downloads repo_commits repo_tags repo_branches /k33g/gh3">
+          <span class="octicon octicon-code"></span> <span class="full-word">Code</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+        <li class="tooltipped tooltipped-w" aria-label="Issues">
+          <a href="/k33g/gh3/issues" aria-label="Issues" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-gotokey="i" data-selected-links="repo_issues /k33g/gh3/issues">
+            <span class="octicon octicon-issue-opened"></span> <span class="full-word">Issues</span>
+            <span class='counter'>5</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>        </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Pull Requests">
+        <a href="/k33g/gh3/pulls" aria-label="Pull Requests" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-gotokey="p" data-selected-links="repo_pulls /k33g/gh3/pulls">
+            <span class="octicon octicon-git-pull-request"></span> <span class="full-word">Pull Requests</span>
+            <span class='counter'>0</span>
+            <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+
+    </ul>
+    <div class="sunken-menu-separator"></div>
+    <ul class="sunken-menu-group">
+
+      <li class="tooltipped tooltipped-w" aria-label="Pulse">
+        <a href="/k33g/gh3/pulse" aria-label="Pulse" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="pulse /k33g/gh3/pulse">
+          <span class="octicon octicon-pulse"></span> <span class="full-word">Pulse</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Graphs">
+        <a href="/k33g/gh3/graphs" aria-label="Graphs" class="js-selected-navigation-item sunken-menu-item" data-pjax="true" data-selected-links="repo_graphs repo_contributors /k33g/gh3/graphs">
+          <span class="octicon octicon-graph"></span> <span class="full-word">Graphs</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+
+      <li class="tooltipped tooltipped-w" aria-label="Network">
+        <a href="/k33g/gh3/network" aria-label="Network" class="js-selected-navigation-item sunken-menu-item js-disable-pjax" data-selected-links="repo_network /k33g/gh3/network">
+          <span class="octicon octicon-git-branch"></span> <span class="full-word">Network</span>
+          <img alt="Octocat-spinner-32" class="mini-loader" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+</a>      </li>
+    </ul>
+
+
+  </div>
+</div>
+
+              <div class="only-with-full-nav">
+                
+
+  
+
+<div class="clone-url open"
+  data-protocol-type="http"
+  data-url="/users/set_protocol?protocol_selector=http&amp;protocol_type=clone">
+  <h3><strong>HTTPS</strong> clone URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/k33g/gh3.git" readonly="readonly">
+
+    <span aria-label="copy to clipboard" class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/k33g/gh3.git" data-copied-hint="copied!"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+  
+
+<div class="clone-url "
+  data-protocol-type="subversion"
+  data-url="/users/set_protocol?protocol_selector=subversion&amp;protocol_type=clone">
+  <h3><strong>Subversion</strong> checkout URL</h3>
+  <div class="clone-url-box">
+    <input type="text" class="clone js-url-field"
+           value="https://github.com/k33g/gh3" readonly="readonly">
+
+    <span aria-label="copy to clipboard" class="js-zeroclipboard url-box-clippy minibutton zeroclipboard-button" data-clipboard-text="https://github.com/k33g/gh3" data-copied-hint="copied!"><span class="octicon octicon-clippy"></span></span>
+  </div>
+</div>
+
+
+<p class="clone-options">You can clone with
+      <a href="#" class="js-clone-selector" data-protocol="http">HTTPS</a>
+      or <a href="#" class="js-clone-selector" data-protocol="subversion">Subversion</a>.
+  <span class="help tooltipped tooltipped-n" aria-label="Get help on which URL is right for you.">
+    <a href="https://help.github.com/articles/which-remote-url-should-i-use">
+    <span class="octicon octicon-question"></span>
+    </a>
+  </span>
+</p>
+
+
+
+                <a href="/k33g/gh3/archive/master.zip"
+                   class="minibutton sidebar-button"
+                   aria-label="Download k33g/gh3 as a zip file"
+                   title="Download k33g/gh3 as a zip file"
+                   rel="nofollow">
+                  <span class="octicon octicon-cloud-download"></span>
+                  Download ZIP
+                </a>
+              </div>
+        </div><!-- /.repository-sidebar -->
+
+        <div id="js-repo-pjax-container" class="repository-content context-loader-container" data-pjax-container>
+          
+
+<span id="js-show-full-navigation"></span>
+
+<div class="repository-meta js-details-container ">
+    <div class="repository-description js-details-show">
+      <p>Client-side Javascript API wrapper for GitHub API V3</p>
+    </div>
+
+
+
+</div>
+
+<div class="capped-box overall-summary ">
+
+  <div class="stats-switcher-viewport js-stats-switcher-viewport">
+
+    <ul class="numbers-summary">
+      <li class="commits">
+        <a data-pjax href="/k33g/gh3/commits/master">
+            <span class="num">
+              <span class="octicon octicon-history"></span>
+              34
+            </span>
+            commits
+        </a>
+      </li>
+      <li>
+        <a data-pjax href="/k33g/gh3/branches">
+          <span class="num">
+            <span class="octicon octicon-git-branch"></span>
+            1
+          </span>
+          branch
+        </a>
+      </li>
+
+      <li>
+        <a data-pjax href="/k33g/gh3/releases">
+          <span class="num">
+            <span class="octicon octicon-tag"></span>
+            0
+          </span>
+          releases
+        </a>
+      </li>
+
+      <li>
+        
+  <a href="/k33g/gh3/graphs/contributors">
+    <span class="num">
+      <span class="octicon octicon-organization"></span>
+      5
+    </span>
+    contributors
+  </a>
+      </li>
+    </ul>
+
+      <div class="repository-lang-stats">
+        <ol class="repository-lang-stats-numbers">
+          <li>
+              <a href="/k33g/gh3/search?l=javascript">
+                <span class="color-block language-color" style="background-color:#f15501;"></span>
+                <span class="lang">JavaScript</span>
+                <span class="percent">95.1%</span>
+              </a>
+          </li>
+          <li>
+              <a href="/k33g/gh3/search?l=css">
+                <span class="color-block language-color" style="background-color:#1f085e;"></span>
+                <span class="lang">CSS</span>
+                <span class="percent">4.9%</span>
+              </a>
+          </li>
+        </ol>
+      </div>
+  </div>
+
+</div>
+
+  <div class="tooltipped tooltipped-s" aria-label="Show language statistics">
+    <a href="#"
+     class="repository-lang-stats-graph js-toggle-lang-stats"
+     style="background-color:#1f085e">
+  <span class="language-color" style="width:95.1%; background-color:#f15501;" itemprop="keywords">JavaScript</span><span class="language-color" style="width:4.9%; background-color:#1f085e;" itemprop="keywords">CSS</span>
+    </a>
+  </div>
+
+
+
+<div class="file-navigation in-mid-page">
+    <a href="/k33g/gh3/compare" aria-label="Compare, review, create a pull request" class="minibutton compact primary tooltipped tooltipped-s" aria-label="Compare &amp; review" data-pjax>
+      <span class="octicon octicon-git-compare"></span>
+    </a>
+
+  
+
+<div class="select-menu js-menu-container js-select-menu" >
+  <span class="minibutton select-menu-button js-menu-target" data-hotkey="w"
+    data-master-branch="master"
+    data-ref="master"
+    role="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <span class="octicon octicon-git-branch"></span>
+    <i>branch:</i>
+    <span class="js-select-button">master</span>
+  </span>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <span class="select-menu-title">Switch branches/tags</span>
+        <span class="octicon octicon-remove-close js-menu-close"></span>
+      </div> <!-- /.select-menu-header -->
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" class="js-select-menu-tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" class="js-select-menu-tab">Tags</a>
+            </li>
+          </ul>
+        </div><!-- /.select-menu-tabs -->
+      </div><!-- /.select-menu-filters -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-item js-navigation-item selected">
+              <span class="select-menu-item-icon octicon octicon-check"></span>
+              <a href="/k33g/gh3/tree/master"
+                 data-name="master"
+                 data-skip-pjax="true"
+                 rel="nofollow"
+                 class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target"
+                 title="master">master</a>
+            </div> <!-- /.select-menu-item -->
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div> <!-- /.select-menu-list -->
+
+    </div> <!-- /.select-menu-modal -->
+  </div> <!-- /.select-menu-modal-holder -->
+</div> <!-- /.select-menu -->
+
+
+  <div class="breadcrumb"><span class='repo-root js-repo-root'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/k33g/gh3" data-branch="master" data-direction="back" data-pjax="true" itemscope="url"><span itemprop="title">gh3</span></a></span></span><span class="separator"> / </span><form action="/login?return_to=%2Fk33g%2Fgh3" aria-label="Sign in to make or propose changes" class="js-new-blob-form tooltipped tooltipped-e new-file-link" method="post"><span aria-label="Sign in to make or propose changes" class="js-new-blob-submit octicon octicon-file-add" data-test-id="create-new-git-file" role="button"></span></form></div>
+</div>
+
+
+
+<a href="/k33g/gh3/find/master"
+  data-hotkey="t" class="js-show-file-finder" style="display:none" data-pjax>Show File Finder</a>
+<div class="bubble files-bubble">
+
+  
+  <div class="commit commit-tease js-details-container" >
+    <p class="commit-title ">
+        <a href="/k33g/gh3/commit/2d872e66c1147939b705a948ab412ae271c36325" class="message" data-pjax="true" title="Merge pull request #13 from TvoroG/master
+
+Search v3 support">Merge pull request</a> <a href="https://github.com/k33g/gh3/pull/13" class="issue-link" title="Search v3 support">#13</a> <a href="/k33g/gh3/commit/2d872e66c1147939b705a948ab412ae271c36325" class="message" data-pjax="true" title="Merge pull request #13 from TvoroG/master
+
+Search v3 support">from TvoroG/master</a>
+        <span class="hidden-text-expander inline"><a href="#" class="js-details-target">…</a></span>
+    </p>
+      <div class="commit-desc"><pre>Search v3 support</pre></div>
+    <div class="commit-meta">
+      <span aria-label="Copy SHA" class="js-zeroclipboard zeroclipboard-link" data-clipboard-text="2d872e66c1147939b705a948ab412ae271c36325" data-copied-hint="copied!"><span class="octicon octicon-clippy"></span></span>
+      <a href="/k33g/gh3/commit/2d872e66c1147939b705a948ab412ae271c36325" class="sha-block" data-pjax>latest commit <span class="sha">2d872e66c1</span></a>
+
+      <div class="authorship">
+        <img alt="Philippe CHARRIERE" class="gravatar js-avatar" data-user="491848" height="20" src="https://0.gravatar.com/avatar/03c0a459fd631e867bade2cc95517a4f?d=https%3A%2F%2Fidenticons.github.com%2F2177c42078d80c871b1d7d102a01ae5c.png&amp;r=x&amp;s=140" width="20" />
+        <span class="author-name"><a href="/k33g" data-skip-pjax="true" rel="author">k33g</a></span>
+        authored <time class="js-relative-date updated" data-title-format="YYYY-MM-DD HH:mm:ss" datetime="2014-03-03T23:57:08-08:00" title="2014-03-03 23:57:08">March 03, 2014</time>
+
+      </div>
+    </div>
+  </div>
+
+  <table class="files" data-pjax>
+
+    
+<tbody class=""
+  data-url="/k33g/gh3/file-list/master">
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/k33g/gh3/tree/master/samples" class="js-directory-link" id="6ef9161b900632671022358216c7dfe7-a22ad9ff87efe981de7ac870c1804a5d0d811393" title="samples">samples</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/k33g/gh3/commit/ed47fa4e8f71df4a4a27ae3b8e5e7a1dda9be2ac" class="message" data-pjax="true" title="add sample of v3 search using">add sample of v3 search using</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" data-title-format="YYYY-MM-DD HH:mm:ss" datetime="2014-03-04T00:22:06+04:00" title="2014-03-03 20:22:06">March 04, 2014</time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/k33g/gh3/tree/master/tests" class="js-directory-link" id="b61a6d542f9036550ba9c401c80f00ef-808fee2f4b2bc28aaa64d83a242eb3ea54d4d4bd" title="tests">tests</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/k33g/gh3/commit/35e0639100769d6c9de8c41edc2739b487ea121a" class="message" data-pjax="true" title="add some jasmine tests">add some jasmine tests</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" data-title-format="YYYY-MM-DD HH:mm:ss" datetime="2012-07-31T18:28:51+02:00" title="2012-07-31 16:28:51">July 31, 2012</time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-directory"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/k33g/gh3/tree/master/vendors" class="js-directory-link" id="2bc28e228525b75e14c07dbc14850c34-e484f05fed6e784d0a1f2377146fe195860472a9" title="vendors">vendors</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/k33g/gh3/commit/22f570e3dc400f56492676d36670e6a0afbf5be7" class="message" data-pjax="true" title="first version 0.0.1">first version 0.0.1</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" data-title-format="YYYY-MM-DD HH:mm:ss" datetime="2012-07-25T22:41:58+02:00" title="2012-07-25 20:41:58">July 25, 2012</time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/k33g/gh3/blob/master/.gitattributes" class="js-directory-link" id="fc723d30b02a4cca7a534518111c1a66-0fcd6c27b0f5d2be8cbdf5abba475665e8c3f428" title=".gitattributes">.gitattributes</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/k33g/gh3/commit/ef4f67986e218350717dadf56027398e05ff8fbf" class="message" data-pjax="true" title="Added .gitattributes file to fix cr/lf issue in files">Added .gitattributes file to fix cr/lf issue in files</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" data-title-format="YYYY-MM-DD HH:mm:ss" datetime="2013-01-26T14:44:13+02:00" title="2013-01-26 12:44:13">January 26, 2013</time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/k33g/gh3/blob/master/.gitignore" class="js-directory-link" id="a084b794bc0759e7a6b77810e01874f2-f7010b398633abacd7a344b42ca0e9641d5fc400" title=".gitignore">.gitignore</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/k33g/gh3/commit/2dabfef51140ef598a3b3b8da975e3e7ed738941" class="message" data-pjax="true" title="add cors support">add cors support</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" data-title-format="YYYY-MM-DD HH:mm:ss" datetime="2013-01-28T23:06:32+08:00" title="2013-01-28 15:06:32">January 28, 2013</time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/k33g/gh3/blob/master/README.md" class="js-directory-link" id="04c6e90faac2675aa89e2176d2eec7d8-4222ae20dda2713ee49757ce1bc0cf7e02af55c6" title="README.md">README.md</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/k33g/gh3/commit/e3a54e7b7efcf8e88a999018a69f58493828c171" class="message" data-pjax="true" title="Update README.md">Update README.md</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" data-title-format="YYYY-MM-DD HH:mm:ss" datetime="2014-02-20T08:02:14+01:00" title="2014-02-20 07:02:14">February 20, 2014</time></span></td>
+    </tr>
+    <tr>
+      <td class="icon">
+        <span class="octicon octicon-file-text"></span>
+        <img alt="Octocat-spinner-32" class="spinner" height="16" src="https://github.global.ssl.fastly.net/images/spinners/octocat-spinner-32.gif" width="16" />
+      </td>
+      <td class="content">
+        <span class="css-truncate css-truncate-target"><a href="/k33g/gh3/blob/master/gh3.js" class="js-directory-link" id="9c557118aba899966a0ecbfec195b259-10a99b0f142c5972b9abe400670c0ac726120655" title="gh3.js">gh3.js</a></span>
+      </td>
+      <td class="message">
+        <span class="css-truncate css-truncate-target"><a href="/k33g/gh3/commit/adc61dc3da5cd39d81894c5a000f9e6c8130631f" class="message" data-pjax="true" title="add v3 search support">add v3 search support</a></span>
+      </td>
+      <td class="age"><span class="css-truncate css-truncate-target"><time class="js-relative-date" data-title-format="YYYY-MM-DD HH:mm:ss" datetime="2014-03-04T00:18:11+04:00" title="2014-03-03 20:18:11">March 04, 2014</time></span></td>
+    </tr>
+</tbody>
+
+  </table>
+</div>
+
+  <div id="readme" class="clearfix announce instapaper_body md">
+    <span class="name">
+      <span class="octicon octicon-book"></span>
+      README.md
+    </span>
+
+    <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1>
+<a name="gh3" class="anchor" href="#gh3"><span class="octicon octicon-link"></span></a>gh3</h1>
+
+<p><strong>gh3</strong> is a client-side Javascript API v3 wrapper for GitHub</p>
+
+<p><strong>gh3</strong> is <a href="https://github.com/caolan/async">async.js</a> compliant. (thank you to <a href="https://github.com/Atinux">Atinux</a> and <a href="https://github.com/mklabs">mklabs</a>)</p>
+
+<h2>
+<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<ul>
+<li><a href="http://jquery.com/">jQuery</a></li>
+<li><a href="http://underscorejs.org/">Underscore</a></li>
+</ul><h2>
+<a name="bundled-with-gh3-" class="anchor" href="#bundled-with-gh3-"><span class="octicon octicon-link"></span></a>Bundled with gh3 :</h2>
+
+<p>gh3 cames with 11 kinds of object's type :</p>
+
+<ul>
+<li><code>Gh3.Users</code></li>
+<li><code>Gh3.User</code></li>
+<li><code>Gh3.Repositories</code></li>
+<li><code>Gh3.Repository</code></li>
+<li><code>Gh3.Branch</code></li>
+<li>
+<code>Gh3.Dir</code> inherits of <code>Gh3.ItemContent</code>
+</li>
+<li>
+<code>Gh3.File</code> inherits of <code>Gh3.ItemContent</code>
+</li>
+<li><code>Gh3.Commit</code></li>
+<li><code>Gh3.Gists</code></li>
+<li><code>Gh3.Gist</code></li>
+<li><code>Gh3.GistComment</code></li>
+</ul><p>You can extend all Gh3 types, eg :</p>
+
+<pre><code>var myComment = Gh3.GistComment.extend({
+    //...
+})
+</code></pre>
+
+<p>See <em>§ "Extend User"</em> for more details.</p>
+
+<h2>
+<a name="github-users--gh3users" class="anchor" href="#github-users--gh3users"><span class="octicon octicon-link"></span></a>GitHub Users : Gh3.Users</h2>
+
+<h3>
+<a name="static-methods-of-gh3users" class="anchor" href="#static-methods-of-gh3users"><span class="octicon octicon-link"></span></a>Static Methods of Gh3.Users</h3>
+
+<ul>
+<li>
+<code>Gh3.Users.search(keyword, pagesInfo, callback)</code> retrieve <code>Gh3.User</code> instances by keyword
+
+<ul>
+<li>
+<code>pagesInfo</code> : <code>{ start_page : which_page }</code> (always 100 items max. per page) see <a href="http://developer.github.com/v3/search/">http://developer.github.com/v3/search/</a>
+</li>
+</ul>
+</li>
+<li>
+<code>Gh3.Users.getAll()</code> : return an array of all <code>Gh3.User</code> instances (you have to call <code>search()</code> before)</li>
+<li>
+<code>Gh3.Users.getByName(name)</code> : get a user by his name (you have to call <code>search()</code> before) (return first found user)</li>
+<li>
+<code>Gh3.Users.each(callback)</code> : execute <code>callback</code> for each found users (you have to call <code>search()</code> before)</li>
+<li>
+<code>Gh3.Users.reverse()</code> : reverse order of users (you have to call <code>fetch()</code> before)</li>
+<li>
+<code>Gh3.Users.sort(comparator)</code> : sort users (you have to call <code>search()</code> before)</li>
+<li>
+<code>Gh3.Users.filter(comparator)</code> : return an array of <code>Gh3.User</code> instances filtered by <code>comparator</code>  (you have to call <code>search()</code> before)</li>
+</ul><h4>
+<a name="example-" class="anchor" href="#example-"><span class="octicon octicon-link"></span></a>example :</h4>
+
+<pre><code>Gh3.Users.search("mad", {start_page : 3}, function (err, response) {
+    if(err) {
+        throw "outch ..."
+    }
+    //console.log(Gh3.Users.getAll());
+    console.log(response.getAll());
+    response.each(function (user) {
+        console.log(user.name, user.login, user.repos, user)
+    });
+});
+</code></pre>
+
+<p>See <code>samples/10-users.html</code></p>
+
+<h2>
+<a name="github-user--gh3user" class="anchor" href="#github-user--gh3user"><span class="octicon octicon-link"></span></a>GitHub User : Gh3.User</h2>
+
+<h3>
+<a name="declare-user" class="anchor" href="#declare-user"><span class="octicon octicon-link"></span></a>Declare User</h3>
+
+<pre><code>var k33g = new Gh3.User("k33g");
+</code></pre>
+
+<h4>
+<a name="methods-of-gh3user" class="anchor" href="#methods-of-gh3user"><span class="octicon octicon-link"></span></a>Methods of Gh3.User</h4>
+
+<ul>
+<li>
+<code>fetch(callback)</code> : retrieve GitHub User's informations</li>
+</ul><h3>
+<a name="get-user-data" class="anchor" href="#get-user-data"><span class="octicon octicon-link"></span></a>Get User data</h3>
+
+<pre><code>k33g.fetch(function (err, resUser){
+
+    if(err) {
+        throw "outch ..."
+    }
+
+    console.log("Blog : ", resUser.blog); // == k33g.blog
+    console.log("Name : ", resUser.name);
+    //etc. ...
+});
+</code></pre>
+
+<p>See <code>/samples/01-user.html</code></p>
+
+<h3>
+<a name="extend-user" class="anchor" href="#extend-user"><span class="octicon octicon-link"></span></a>Extend User</h3>
+
+<p>I've cribbed the <a href="http://backbonejs.org/">Backbone</a> object model :</p>
+
+<pre><code>var GitHubUser = Gh3.User.extend({//instance members
+    constructor : function(login) {
+        GitHubUser.__super__.constructor.call(this, login);
+        GitHubUser.allUsers.push(this);
+    }
+},{ //Static members
+    allUsers : [],
+    each : function (callback) {
+        _.each(GitHubUser.allUsers, function (user) {
+            callback(user);
+        })
+    }
+});
+
+var k33g = new GitHubUser("k33g")
+,   loicdescotte = new GitHubUser("loicdescotte")
+,   mklabs = new GitHubUser("mklabs")
+,   chamerling = new GitHubUser("chamerling");
+
+GitHubUser.each(function (user) {
+    user.fetch(function (err, resUser) {
+
+        if(err) {
+            throw "outch ..."
+        }
+
+        console.log(JSON.stringify(resUser));
+    });
+})
+</code></pre>
+
+<p>See <code>samples/02-user.html</code></p>
+
+<h2>
+<a name="github-repositories-of-a-user--gh3repositories" class="anchor" href="#github-repositories-of-a-user--gh3repositories"><span class="octicon octicon-link"></span></a>GitHub Repositories of a user : Gh3.Repositories</h2>
+
+<h3>
+<a name="declare-and-get-repositories-of-a-user" class="anchor" href="#declare-and-get-repositories-of-a-user"><span class="octicon octicon-link"></span></a>Declare and Get Repositories of a user</h3>
+
+<pre><code>var k33gRepositories = new Gh3.Repositories(k33g);
+k33gRepositories.fetch(function () {
+    console.log("Repositories", k33gRepositories);
+}, function(){/*error*/},{page:1, per_page:500, direction : "desc"});
+//all repositories, one page, 500 items per page, sort : descending
+</code></pre>
+
+<h4>
+<a name="methods-of-gh3repositories" class="anchor" href="#methods-of-gh3repositories"><span class="octicon octicon-link"></span></a>Methods of Gh3.Repositories</h4>
+
+<ul>
+<li>
+<code>fetch(pagesInfoAndParameters, paginationInfo, callback)</code> retrieve <code>Gh3.Repository</code> instances of a user
+
+<ul>
+<li>
+<code>pagesInfoAndParameters</code> : <code>{ pages : number_of_pages, per_page : number_of_repositories_per page }</code>
+</li>
+<li>you can pass other parameters as : <code>direction : "desc"</code>, see <a href="http://developer.github.com/v3/repos/">http://developer.github.com/v3/repos/</a>
+</li>
+<li>
+<code>paginationInfo</code> : which page. Possible values : see <a href="http://developer.github.com/v3/#pagination">http://developer.github.com/v3/#pagination</a>
+
+<ul>
+<li>"next"</li>
+<li>"last"</li>
+<li>"first"</li>
+<li>"prev"</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code>getRepositories()</code> : return an array of <code>Gh3.Repository</code> instances (you have to call <code>fetch()</code> before)</li>
+<li>
+<code>getRepositoryByName(name)</code> : get a repository by his name (you have to call <code>fetch()</code> before)</li>
+<li>
+<code>eachRepository(callback)</code> : execute <code>callback</code> for each repository of the user (you have to call <code>fetch()</code> before)</li>
+<li>
+<code>reverseRepositories()</code> : reverse order of repositories (you have to call <code>fetch()</code> before)</li>
+<li>
+<code>sortRepositories(comparator)</code> : sort repositories (you have to call <code>fetch()</code> before)</li>
+<li>
+<code>filterRepositories(comparator)</code> : return an array of <code>Gh3.Repository</code> instances filtered by <code>comparator</code>  (you have to call <code>fetchContents()</code> before)</li>
+</ul><h5>
+<a name="static-methods" class="anchor" href="#static-methods"><span class="octicon octicon-link"></span></a>Static Methods</h5>
+
+<ul>
+<li>
+<code>Gh3.Repositories.search(keyword, pagesInfo, callback)</code> retrieve <code>Gh3.Repository</code> instances by keyword
+
+<ul>
+<li>
+<code>pagesInfo</code> : <code>{ start_page : which_page }</code> (always 100 items max. per page) see <a href="http://developer.github.com/v3/search/">http://developer.github.com/v3/search/</a>
+</li>
+</ul>
+</li>
+<li>
+<code>Gh3.Repositories.getAll()</code> : return an array of all <code>Gh3.Repository</code> instances (you have to call <code>search()</code> before)</li>
+<li>
+<code>Gh3.Repositories.getByName(name)</code> : get a repository by his name (you have to call <code>search()</code> before) (return first found repository)</li>
+<li>
+<code>Gh3.Repositories.each(callback)</code> : execute <code>callback</code> for each found repositories (you have to call <code>search()</code> before)</li>
+<li>
+<code>Gh3.Repositories.reverse()</code> : reverse order of repositories (you have to call <code>fetch()</code> before)</li>
+<li>
+<code>Gh3.Repositories.sort(comparator)</code> : sort repositories (you have to call <code>search()</code> before)</li>
+<li>
+<code>Gh3.Repositories.filter(comparator)</code> : return an array of <code>Gh3.Repository</code> instances filtered by <code>comparator</code>  (you have to call <code>search()</code> before)</li>
+</ul><p>See <code>samples/03-repository.html</code>
+See <code>samples/09-repositories.html</code></p>
+
+<h2>
+<a name="github-repository--gh3repository" class="anchor" href="#github-repository--gh3repository"><span class="octicon octicon-link"></span></a>GitHub Repository : Gh3.Repository</h2>
+
+<h3>
+<a name="declare-and-get-repository-informations" class="anchor" href="#declare-and-get-repository-informations"><span class="octicon octicon-link"></span></a>Declare and Get Repository informations</h3>
+
+<pre><code>var k33g = new Gh3.User("k33g"); // You need a user first
+
+var k33gBlog = new Gh3.Repository("k33g.github.com", k33g);
+
+k33gBlog.fetch(function (err, res) {
+    if(err) { throw "outch ..." }
+
+    console.log(k33gBlog);
+});
+</code></pre>
+
+<h4>
+<a name="methods-of-gh3repository" class="anchor" href="#methods-of-gh3repository"><span class="octicon octicon-link"></span></a>Methods of Gh3.Repository</h4>
+
+<ul>
+<li>
+<code>getBranches()</code> : return array of <code>Gh3.Branch</code> instances</li>
+<li>
+<code>fetch(callback)</code> : retrieve repository's informations</li>
+<li>
+<code>fetchBranches(callback)</code> : retrieve repository's branches (you have to call <code>fetch()</code> before)</li>
+<li>
+<code>getBranchByName(branch_name)</code> : return a <code>Gh3.Branch</code> instance found by name (you have to call <code>fetchBranches()</code> before)</li>
+<li>
+<code>eachBranch(callback)</code> : execute <code>callback</code> for each branch of the repository (you have to call <code>fetchBranches()</code> before)</li>
+<li>
+<code>reverseBranches()</code> : reverse order of branches</li>
+<li>
+<code>sortBranches(comparator)</code> : sort branches</li>
+</ul><h3>
+<a name="get-branches-of-repository" class="anchor" href="#get-branches-of-repository"><span class="octicon octicon-link"></span></a>Get Branches of Repository</h3>
+
+<p>After calling repository <code>fetch()</code> method :</p>
+
+<pre><code>k33gBlog.fetchBranches(function (err, res) {
+    if(err) { throw "outch ..." }
+
+    console.log(k33gBlog.getBranches());
+})
+</code></pre>
+
+<p><code>branches</code> is an array of <code>Gh3.Branch</code> instances populated when <code>fetchBranches()</code> is called.</p>
+
+<p>You can do that too :</p>
+
+<pre><code>k33gBlog.fetchBranches(function (err, res) {
+    if(err) { throw "outch ..." }
+
+    console.log("Array of branches : ", k33gBlog.getBranches());
+    k33gBlog.eachBranch(function (branch) {
+        console.log(branch.name);
+    })
+
+    //and :
+    console.log("Master Branch : ", k33gBlog.getBranchByName("master"));
+
+})
+</code></pre>
+
+<p>See <code>samples/03-repository.html</code></p>
+
+<h2>
+<a name="github-branch--gh3branch" class="anchor" href="#github-branch--gh3branch"><span class="octicon octicon-link"></span></a>GitHub Branch : Gh3.Branch</h2>
+
+<h4>
+<a name="methods-of-gh3branch" class="anchor" href="#methods-of-gh3branch"><span class="octicon octicon-link"></span></a>Methods of Gh3.Branch</h4>
+
+<ul>
+<li>
+<code>fetchContents(callback)</code> : retrieve <code>Gh3.File</code> instances and/or <code>Gh3.Dir</code> instances of the branch</li>
+<li>
+<code>getContents()</code> : return array of <code>Gh3.ItemContent</code> instances (so <code>Gh3.File</code> instances and/or <code>Gh3.Dir</code> instances)</li>
+<li>
+<code>getFileByName(file_name)</code> : return a <code>Gh3.File</code> instance found by name (you have to call <code>fetchContents()</code> before)</li>
+<li>
+<code>getDirByName(dir_name)</code> : return a <code>Gh3.Dir</code> instance found by name (you have to call <code>fetchContents()</code> before)</li>
+<li>
+<code>eachContent(callback)</code> : execute <code>callback</code> for each content item of the branch (you have to call <code>fetchContents()</code> before)</li>
+<li>
+<code>reverseContents()</code> : reverse order of contents</li>
+<li>
+<code>sortContents(comparator)</code> : sort contents</li>
+<li>
+<code>filterContents(comparator)</code> : return an array of <code>Gh3.ItemContent</code> instances filtered by <code>comparator</code>  (you have to call <code>fetchContents()</code> before)</li>
+</ul><h2>
+<a name="get-contents-of-a-branch" class="anchor" href="#get-contents-of-a-branch"><span class="octicon octicon-link"></span></a>Get contents of a branch</h2>
+
+<p>You have to declare, get repository informations and fetch branches before calling <code>fetchContents(callback)</code> :</p>
+
+<pre><code>var k33g = new Gh3.User("k33g")
+,   k33gBlog = new Gh3.Repository("k33g.github.com", k33g);
+
+k33gBlog.fetch(function (err, res) {
+    if(err) { throw "outch ..." }
+
+    k33gBlog.fetchBranches(function (err, res) {
+        if(err) { throw "outch ..." }
+
+        var master = k33gBlog.getBranchByName("master");
+
+        master.fetchContents(function (err, res) {
+            if(err) { throw "outch ..." }
+
+            master.eachContent(function (content) {
+                console.log(content.path, content.type);
+            });
+        });
+
+    })
+});
+</code></pre>
+
+<p>See <code>samples/04-branch.html</code></p>
+
+<p>You obtain a list of files and directories. You can directly fetch raw content of a file or fetch contents of a directory.</p>
+
+<h2>
+<a name="github-file--gh3file" class="anchor" href="#github-file--gh3file"><span class="octicon octicon-link"></span></a>GitHub File : Gh3.File</h2>
+
+<h4>
+<a name="methods-of-gh3file" class="anchor" href="#methods-of-gh3file"><span class="octicon octicon-link"></span></a>Methods of Gh3.File</h4>
+
+<ul>
+<li>
+<code>fetchContent(callback)</code> : retrieve (raw) content of the file</li>
+<li>
+<code>fetchCommits(callback)</code> : retrieve commits of the file</li>
+<li>
+<code>getRawContent()</code> : return raw content of the file (you have to call <code>fetchContent()</code> before)</li>
+<li>
+<code>getCommits()</code> : return array of <code>Gh3.Commit</code> instances (you have to call <code>fetchCommits()</code> before)</li>
+<li>
+<code>getLastCommit()</code> : return last <code>Gh3.Commit</code> instance</li>
+<li>
+<code>getFirstCommit()</code> : return first <code>Gh3.Commit</code> instance</li>
+<li>
+<code>eachCommit(callback)</code> : execute <code>callback</code> for each commit of the file (you have to call <code>fetchCommits()</code> before)</li>
+<li>
+<code>filterCommits(comparator)</code> : return an array of <code>Gh3.Commit</code> instances filtered by <code>comparator</code>  (you have to call <code>fetchCommits()</code> before)</li>
+<li>
+<code>reverseCommits()</code> : reverse order of commits</li>
+<li>
+<code>sortCommits(comparator)</code> : sort commits</li>
+</ul><h3>
+<a name="get-raw-content-of-a-file" class="anchor" href="#get-raw-content-of-a-file"><span class="octicon octicon-link"></span></a>Get raw content of a file</h3>
+
+<pre><code>master.fetchContents(function (err, res) {
+    if(err) { throw "outch ..." }
+
+    var myfile = master.getFileByName("index.html");
+
+    /* this way is possible to :
+        var myfile = master.getContents()[8];
+    */
+
+    myfile.fetchContent(function (err, res) {
+        if(err) { throw "outch ..." }
+
+        console.log(myfile.getRawContent());
+    });
+
+});
+</code></pre>
+
+<p>See <code>samples/05-file.html</code></p>
+
+<h3>
+<a name="get-commits-of-a-file" class="anchor" href="#get-commits-of-a-file"><span class="octicon octicon-link"></span></a>Get commits of a file</h3>
+
+<pre><code>    myfile.fetchCommits(function (err, res) {
+        if(err) { throw "outch ..." }
+
+        console.log(myfile.getCommits()); 
+
+        myfile.eachCommit(function (commit) {
+            console.log(commit.author.login, commit.message, commit.date);
+        });
+    });
+</code></pre>
+
+<p>See <code>samples/05-file.html</code></p>
+
+<h2>
+<a name="github-directory--gh3dir" class="anchor" href="#github-directory--gh3dir"><span class="octicon octicon-link"></span></a>GitHub Directory : Gh3.Dir</h2>
+
+<p>It works much like a <code>Gh3.Branch</code>.</p>
+
+<h4>
+<a name="methods-of-gh3dir" class="anchor" href="#methods-of-gh3dir"><span class="octicon octicon-link"></span></a>Methods of Gh3.Dir</h4>
+
+<ul>
+<li>
+<code>fetchContents(callback)</code> : retrieve <code>Gh3.File</code> instances and/or <code>Gh3.Dir</code> instances of the directory</li>
+<li>
+<code>getContents()</code> : return array of <code>Gh3.ItemContent</code> instances (so <code>Gh3.File</code> instances and/or <code>Gh3.Dir</code> instances)</li>
+<li>
+<code>getFileByName(file_name)</code> : return a <code>Gh3.File</code> instance found by name (you have to call <code>fetchContents()</code> before)</li>
+<li>
+<code>getDirByName(dir_name)</code> : return a <code>Gh3.Dir</code> instance found by name (you have to call <code>fetchContents()</code> before)</li>
+<li>
+<code>eachContent(callback)</code> : execute <code>callback</code> for each content item of the directory (you have to call <code>fetchContents()</code> before)</li>
+<li>
+<code>reverseContents()</code> : reverse order of contents</li>
+<li>
+<code>sortContents(comparator)</code> : sort contents</li>
+<li>
+<code>filterContents(comparator)</code> : return an array of <code>Gh3.ItemContent</code> instances filtered by <code>comparator</code>  (you have to call <code>fetchContents()</code> before)</li>
+</ul><h3>
+<a name="get-contents-of-a-directory" class="anchor" href="#get-contents-of-a-directory"><span class="octicon octicon-link"></span></a>Get contents of a directory</h3>
+
+<pre><code>master.fetchContents(function (err, res) {
+    if(err) { throw "outch ..." }
+
+    var dir = master.getDirByName('_posts');
+
+    dir.fetchContents(function (err, res) {
+        if(err) { throw "outch ..." }
+
+        console.log(dir.getContents());
+
+        dir.eachContent(function (content) {
+            console.log(content.name, content.type, content.size);
+
+        });
+    });
+
+});
+</code></pre>
+
+<p>See <code>samples/06-dir.html</code></p>
+
+<h2>
+<a name="github-gists--gh3gists" class="anchor" href="#github-gists--gh3gists"><span class="octicon octicon-link"></span></a>GitHub Gists : Gh3.Gists</h2>
+
+<h4>
+<a name="methods-of-gh3gists" class="anchor" href="#methods-of-gh3gists"><span class="octicon octicon-link"></span></a>Methods of Gh3.Gists</h4>
+
+<ul>
+<li>
+<code>fetch(pagesInfo, paginationInfo, callback)</code> : retrieve <code>Gh3.Gist</code> instances of a user
+
+<ul>
+<li>
+<code>pagesInfo</code> : <code>{ pages : number_of_pages, per_page : number_of_gists_per page }</code>
+</li>
+<li>
+<code>paginationInfo</code> : which page. Possible values : see <a href="http://developer.github.com/v3/#pagination">http://developer.github.com/v3/#pagination</a>
+
+<ul>
+<li>"next"</li>
+<li>"last"</li>
+<li>"first"</li>
+<li>"prev"</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<code>getGists()</code> : return an array of <code>Gh3.Gist</code> instances (you have to call <code>fetch()</code> before)</li>
+<li>
+<code>eachGist</code> : execute <code>callback</code> for each gist of the user (you have to call <code>fetch()</code> before)</li>
+<li>
+<code>filter(comparator)</code> : return an array of <code>Gh3.Gist</code> instances filtered by <code>comparator</code>  (you have to call <code>fetch()</code> before)</li>
+</ul><h3>
+<a name="get-public-gists-of-a-user" class="anchor" href="#get-public-gists-of-a-user"><span class="octicon octicon-link"></span></a>Get public gists of a user</h3>
+
+<pre><code>var GistsOfK33g = new Gh3.Gists(new Gh3.User("k33g"));
+
+GistsOfK33g.fetch(null, null, function (err, res) {
+    if(err) {
+        throw "outch ..."
+    }
+
+    GistsOfK33g.eachGist(function (gist) {
+        console.log(gist.description, gist.id);
+    });
+});
+</code></pre>
+
+<h3>
+<a name="get-public-gists-of-a-user--five-gists-of-the-next-page" class="anchor" href="#get-public-gists-of-a-user--five-gists-of-the-next-page"><span class="octicon octicon-link"></span></a>Get public gists of a user : five gists of the next page</h3>
+
+<pre><code>GistsOfK33g.fetch({page:2, per_page:5}, "next", function (err, res) {
+    if(err) {
+        throw "outch ..."
+    }
+
+    GistsOfK33g.eachGist(function (gist) {
+        console.log(gist.description, gist.id);
+    });
+};
+</code></pre>
+
+<p>See <code>samples/07-gists.html</code></p>
+
+<h3>
+<a name="get-public-gists-of-a-user-only-if-they-have-comments" class="anchor" href="#get-public-gists-of-a-user-only-if-they-have-comments"><span class="octicon octicon-link"></span></a>Get public gists of a user only if they have comment(s)</h3>
+
+<pre><code>AllGistsOfK33g.fetch(function (err, res) {
+    if(err) {
+        throw "outch ..."
+    }
+
+    console.log("Filtered gists : ", AllGistsOfK33g.filter(function (gist) {
+        return gist.comments &gt; 0;
+    }));
+
+},function(){//onerror},{page:1, per_page:500});
+</code></pre>
+
+<p>See <code>samples/07-gists.html</code></p>
+
+<h2>
+<a name="github-gist--gh3gist" class="anchor" href="#github-gist--gh3gist"><span class="octicon octicon-link"></span></a>GitHub Gist : Gh3.Gist</h2>
+
+<h4>
+<a name="methods-of-gh3gist" class="anchor" href="#methods-of-gh3gist"><span class="octicon octicon-link"></span></a>Methods of Gh3.Gist</h4>
+
+<ul>
+<li>
+<code>fetchContents(callback)</code> : retrieve contents (files) of the gist</li>
+<li>
+<code>fetchComments(callback)</code> : retrieve comments of the gist</li>
+<li>
+<code>getFileByName()</code> : return a file of the gist, found by his name</li>
+<li>
+<code>getFiles()</code> : return array of files objects</li>
+<li>
+<code>eachFile(callback)</code> : execute <code>callback</code> for each file of the gist (you have to call <code>fetchContents()</code> before)</li>
+<li>
+<code>getComments()</code> : return an array of <code>Gh3.GistComment</code> instances</li>
+<li>
+<code>eachComment(callback)</code> : execute <code>callback</code> for each comment of the gist (you have to call <code>fetchComments()</code> before)</li>
+<li>
+<code>filterComments(comparator)</code> : return an array of <code>Gh3.GistComment</code> instances filtered by <code>comparator</code>  (you have to call <code>fetchComments()</code> before)</li>
+</ul><h3>
+<a name="get-a-public-gist-by-id" class="anchor" href="#get-a-public-gist-by-id"><span class="octicon octicon-link"></span></a>Get a public gist by id</h3>
+
+<pre><code>var oneGist = new Gh3.Gist({id:"2287018"});
+
+oneGist.fetchContents(function (err, res) {
+    if(err) {
+        throw "outch ..."
+    }
+
+    console.log("oneGist : ", oneGist);
+    console.log("Files : ", oneGist.files);
+
+    oneGist.eachFile(function (file) {
+        console.log(file.filename, file.language, file.type, file.size);
+    });
+});
+</code></pre>
+
+<h4>
+<a name="get-content-of-a-file-of-a-gist" class="anchor" href="#get-content-of-a-file-of-a-gist"><span class="octicon octicon-link"></span></a>Get content of a file of a gist</h4>
+
+<pre><code>console.log(oneGist.getFileByName("use.thing.js").content);
+</code></pre>
+
+<p>See <code>samples/07-gists.html</code></p>
+
+<h3>
+<a name="get-comments-of-a-public-gist" class="anchor" href="#get-comments-of-a-public-gist"><span class="octicon octicon-link"></span></a>Get comments of a public gist</h3>
+
+<pre><code>var anOtherGist = new Gh3.Gist({id:"1096826"});
+
+anOtherGist.fetchContents(function (err, res) {
+    if(err) { throw "outch ..." }
+
+    anOtherGist.fetchComments(function (err, res) {
+        if(err) { throw "outch ..." }
+
+        anOtherGist.eachComment(function (comment) {
+            console.log(comment.body, "By ", comment.user.login);
+        });
+    });
+});
+</code></pre>
+
+<p>See <code>samples/07-gists.html</code></p>
+
+<h3>
+<a name="filter-comments-of-a-public-gist" class="anchor" href="#filter-comments-of-a-public-gist"><span class="octicon octicon-link"></span></a>Filter comments of a public gist</h3>
+
+<pre><code>var PaulIrishGist = new Gh3.Gist({id:"3098860"});
+
+PaulIrishGist.fetchContents(function (err, res) {
+    if(err) { throw "outch ..." }
+
+    PaulIrishGist.fetchComments(function (err, res) {
+        if(err) { throw "outch ..." }
+
+        console.log(
+            PaulIrishGist.filterComments(function (comment) {
+                return comment.user.login == "codepo8";
+            })
+        );
+    });
+
+});
+</code></pre>
+
+<p>See <code>samples/08-gists_comments.html</code></p>
+
+<p>... to be continued</p>
+
+<h2>
+<a name="history" class="anchor" href="#history"><span class="octicon octicon-link"></span></a>History</h2>
+
+<ul>
+<li>2012.07.25 : '0.0.1' : first version</li>
+<li>2012.07.26 : '0.0.2' : fixes</li>
+<li>2012.07.26 : '0.0.3' : gists pagination</li>
+<li>2012.07.28 : '0.0.4' :
+
+<ul>
+<li>refactoring : Gh3.Helper</li>
+<li>gists filtering</li>
+<li>gist comments filtering</li>
+<li>file commits filtering</li>
+<li>commits sorting</li>
+<li>new Type : Gh3.Repositories (with pagination)</li>
+</ul>
+</li>
+<li>2012.07.29 : '0.0.5' :
+
+<ul>
+<li>Gh3.Repositories : add search ability<br>
+</li>
+<li>add Gh3.Users : search user ability</li>
+</ul>
+</li>
+<li>2012.07.29 : '0.0.6' :
+
+<ul>
+<li>async.js compliant</li>
+</ul>
+</li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Gh3 is available under the terms of the <a href="http://en.wikipedia.org/wiki/MIT_License#License_terms">MIT-License</a>.</p>
+
+<p>Copyright 2014-2015, Philippe Charrière</p></article>
+  </div>
+
+
+        </div>
+
+      </div><!-- /.repo-container -->
+      <div class="modal-backdrop"></div>
+    </div><!-- /.container -->
+  </div><!-- /.site -->
+
+
+    </div><!-- /.wrapper -->
+
+      <div class="container">
+  <div class="site-footer">
+    <ul class="site-footer-links right">
+      <li><a href="https://status.github.com/">Status</a></li>
+      <li><a href="http://developer.github.com">API</a></li>
+      <li><a href="http://training.github.com">Training</a></li>
+      <li><a href="http://shop.github.com">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+
+    </ul>
+
+    <a href="/">
+      <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
+    </a>
+
+    <ul class="site-footer-links">
+      <li>&copy; 2014 <span title="0.03164s from github-fe139-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="/site/terms">Terms</a></li>
+        <li><a href="/site/privacy">Privacy</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div><!-- /.site-footer -->
+</div><!-- /.container -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped tooltipped-w" aria-label="Exit Zen Mode">
+      <span class="mega-octicon octicon-screen-normal"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped tooltipped-w"
+      aria-label="Switch themes">
+      <span class="octicon octicon-color-mode"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="octicon octicon-alert"></span>
+      <a href="#" class="octicon octicon-remove-close close js-ajax-error-dismiss"></a>
+      Something went wrong with that request. Please try again.
+    </div>
+
+  </body>
+</html>
+
