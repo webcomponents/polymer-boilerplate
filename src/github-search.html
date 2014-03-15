@@ -1,0 +1,64 @@
+<!-- Import Polymer -->
+<link rel="import" href="../components/polymer/polymer.html">
+
+<script src="../components/gh3/vendors/jquery-1.7.2.js"></script>
+<script src="../components/gh3/vendors/underscore.js"></script>
+<script src="../components/gh3/gh3.js"></script>
+
+<!-- Define your custom element -->
+<polymer-element name="github-search" attributes="query order sort type">
+    <template>
+    </template>
+    <script>
+        Polymer('github-search', {
+            query: '',
+            repo: '',
+            order: 'asc',
+            sort: '',
+            type: '',
+            searchResults: [],
+            ready: function(){
+                if( this.type === "issues" ){
+                    // Search
+                    Gh3.Search.issues({
+                        q: this.query,
+                        sort: this.sort || 'created',
+                        order: this.order,
+                    }, {}, function (err, res) {
+                        console.log(res);
+                        this.searchResults = res;
+                        this.fire('github-results', res);
+                    }.bind(this));                    
+                } else if( this.type === "repos" ){
+                    Gh3.Search.repos({
+                        q: this.query,
+                        sort: this.sort || 'stars',
+                        order: 'desc',
+                    }, {}, function (err, repos) {
+                        this.searchResults = repos;
+                        this.fire('github-results', repos);
+                        console.log(repos);
+                    }.bind(this));                    
+                } else if( this.type === "code" ){
+                    Gh3.Search.code({
+                        q: this.query,
+                    }, {}, function (err, code) {
+                        this.searchResults = code;
+                        this.fire('github-results', code);
+                        console.log(code);
+                    });                    
+                } else if( this.type === "users" ){
+                    Gh3.Search.users({
+                        q: this.query,
+                        sort: 'followers'
+                    }, {per_page: 50}, function (err, users) {
+                        this.searchResults = users;
+                        this.fire('github-results', users);
+                        console.log('users', users);
+                    });                    
+                }
+            }
+        });
+    </script>
+
+</polymer-element>
