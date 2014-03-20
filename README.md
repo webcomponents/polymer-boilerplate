@@ -1,12 +1,10 @@
 # &lt;my-element&gt;
 
-TODO: Write a project description
-
-> Maintained by [Your Name](https://github.com/yourname).
+> TODO: Write a project description
 
 ## Demo
 
-> [Check it live](http://webcomponents.github.io/element-boilerplate).
+[Check it live!](http://webcomponents.github.io/element-boilerplate)
 
 ## Usage
 
@@ -27,6 +25,14 @@ TODO: Write a project description
     ```html
     <my-element></my-element>
     ```
+
+## Options
+
+Attribute  | Options                   | Default             | Description
+---        | ---                       | ---                 | ---
+`foo`      | *string*                  | `bar`               | Lorem ipsum
+`bar`      | `abc`, `def`, `ghi`       | `foo`               | Lorem ipsum
+`blah`     | *int*                     | `100`               | Lorem ipsum
 
 ## Setup
 
@@ -50,14 +56,6 @@ In order to run it locally you'll need a basic server setup.
     ```sh
     $ grunt connect
     ```
-
-## Options
-
-Attribute  | Options                   | Default             | Description
----        | ---                       | ---                 | ---
-`foo`      | *string*                  | `bar`               | Lorem ipsum
-`bar`      | `abc`, `def`, `ghi`       | `foo`               | Lorem ipsum
-`height`   | *int*                     | `100`               | Lorem ipsum
 
 ## Contributing
 
