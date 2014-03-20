@@ -13,7 +13,7 @@ TODO: Write a project description
 1. Import Web Components' polyfill:
 
     ```html
-    <script src="bower_components/platform/platform.js"></script>
+    <script src="lib/platform/platform.js"></script>
     ```
 
 2. Import Custom Element:
