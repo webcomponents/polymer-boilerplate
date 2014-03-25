@@ -30,9 +30,7 @@
 
 Attribute  | Options                   | Default             | Description
 ---        | ---                       | ---                 | ---
-`foo`      | *string*                  | `bar`               | Lorem ipsum
-`bar`      | `abc`, `def`, `ghi`       | `foo`               | Lorem ipsum
-`blah`     | *int*                     | `100`               | Lorem ipsum
+`name`     | *string*                  | `World`             | Lorem ipsum
 
 ## Setup
 
