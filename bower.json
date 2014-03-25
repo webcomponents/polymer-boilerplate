@@ -8,7 +8,7 @@
     "license": "MIT",
     "main": "src/my-element.html",
     "keywords": [
-        "web-component",
+        "polymer",
         "web-components"
     ],
     "ignore": [
