@@ -6,7 +6,7 @@
         "TODO: Write your name"
     ],
     "license": "MIT",
-    "main": "src/my-element.html",
+    "main": "dist/my-element.html",
     "keywords": [
         "polymer",
         "web-components"

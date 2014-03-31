@@ -8,9 +8,23 @@ module.exports = function(grunt) {
                     keepalive: true
                 }
             }
+        },
+        replace: {
+            example: {
+                src: ['src/my-element.html'],
+                dest: 'dist/',
+                replacements: [{
+                  from: 'bower_components',
+                  to: '..'
+                }]
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-text-replace');
+
+    grunt.registerTask('default', ['connect']);
+    grunt.registerTask('build', ['replace']);
 
 };
