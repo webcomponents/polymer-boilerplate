@@ -8,19 +8,25 @@
 
 ## Usage
 
-1. Import Web Components' polyfill:
+1. Install the component using [Bower](http://bower.io/):
 
-    ```html
-    <script src="lib/platform/platform.js"></script>
+    ```sh
+    $ bower install my-element --save
     ```
 
-2. Import Custom Element:
+2. Import Web Components' polyfill:
 
     ```html
-    <link rel="import" href="src/my-element.html">
+    <script src="bower_components/platform/platform.js"></script>
     ```
 
-3. Start using it!
+3. Import Custom Element:
+
+    ```html
+    <link rel="import" href="bower_components/my-element/dist/my-element.html">
+    ```
+
+4. Start using it!
 
     ```html
     <my-element></my-element>
@@ -32,27 +38,33 @@ Attribute  | Options                   | Default             | Description
 ---        | ---                       | ---                 | ---
 `name`     | *string*                  | `World`             | Lorem ipsum
 
-## Setup
+## Development
 
-In order to run it locally you'll need a basic server setup.
+In order to run it locally you'll need to fetch some dependencies and a basic server setup.
 
-1. Install [NodeJS](http://nodejs.org/download/).
-2. Install [GruntJS](http://gruntjs.com/):
+1. Install [Bower](http://bower.io/) & [Grunt](http://gruntjs.com/):
 
     ```sh
-    $ [sudo] npm install -g grunt-cli
+    $ [sudo] npm install -g bower grunt-cli
     ```
 
-3. Install local dependencies:
+2. Install local dependencies:
 
     ```sh
-    $ npm install
+    $ bower install && npm install
     ```
 
-4. Run a local server and open `http://localhost:8000`.
+3. To test your project, run a local server and open `http://localhost:8000`.
 
     ```sh
-    $ grunt connect
+    $ grunt
+    ```
+
+4. Once you finish developing it, build the distribution files and publish it on Bower.
+
+    ```sh
+    $ grunt build
+    $ bower register my-element https://github.com/you/my-element
     ```
 
 ## Contributing
