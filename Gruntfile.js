@@ -11,11 +11,11 @@ module.exports = function(grunt) {
         },
         replace: {
             example: {
-                src: ['src/my-element.html'],
+                src: ['src/*'],
                 dest: 'dist/',
                 replacements: [{
-                  from: 'bower_components',
-                  to: '..'
+                    from: 'bower_components',
+                    to: '..'
                 }]
             }
         }
