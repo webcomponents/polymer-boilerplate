@@ -4,7 +4,7 @@
 
 ## Demo
 
-[Check it live!](http://webcomponents.github.io/element-boilerplate)
+[Check it live!](http://webcomponents.github.io/polymer-boilerplate)
 
 ## Usage
 
@@ -77,7 +77,7 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 
 ## History
 
-For detailed changelog, check [Releases](https://github.com/webcomponents/element-boilerplate/releases).
+For detailed changelog, check [Releases](https://github.com/webcomponents/polymer-boilerplate/releases).
 
 ## License
 
