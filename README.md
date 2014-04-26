@@ -9,27 +9,31 @@
 
 [Check it live!](http://webcomponents.github.io/polymer-boilerplate)
 
+## Install
+
+Install the component using [Bower](http://bower.io/):
+
+```sh
+$ bower install my-element --save
+```
+
+Or [download as ZIP](https://github.com/webcomponents/polymer-boilerplate/archive/gh-pages.zip).
+
 ## Usage
 
-1. Install the component using [Bower](http://bower.io/):
-
-    ```sh
-    $ bower install my-element --save
-    ```
-
-2. Import Web Components' polyfill:
+1. Import Web Components' polyfill:
 
     ```html
     <script src="bower_components/platform/platform.js"></script>
     ```
 
-3. Import Custom Element:
+2. Import Custom Element:
 
     ```html
     <link rel="import" href="bower_components/my-element/dist/my-element.html">
     ```
 
-4. Start using it!
+3. Start using it!
 
     ```html
     <my-element></my-element>
