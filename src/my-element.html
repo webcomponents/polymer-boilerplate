@@ -2,29 +2,21 @@
 <link rel="import" href="../bower_components/polymer/polymer.html">
 
 <!-- Define your custom element -->
-<polymer-element name="my-element" attributes="foo">
-    <template>
-        <h1>The value of foo is: {{foo}}</h1>
-    </template>
+<polymer-element name="my-element">
+
     <script>
         Polymer('my-element', {
-            // Default value for `foo` property
-            foo: 42,
-
-            // Fires when the `<polymer-element>` has been fully prepared (e.g. Shadow DOM created, property observers setup, event listeners attached, etc).
+            // Fires when the "<polymer-element>" has been fully prepared
             ready: function() {},
 
-            // Fires when an instance of the element was inserted into the DOM. This is an appropriate time to poke at the element's parent or light DOM children.
+            // Fires when the element was inserted into the document
             attached: function() {},
 
             // Fires when the element was removed from the document
             detached: function() {},
 
             // Fires when an attribute was added, removed, or updated
-            attributeChanged: function(attr, oldVal, newVal) {},
-
-            // Fires when the published property `foo` changes
-            fooChanged: function(oldVal, newVal) {}
+            attributeChanged: function(attr, oldVal, newVal) {}
         });
     </script>
 
