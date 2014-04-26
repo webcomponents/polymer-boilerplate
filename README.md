@@ -1,6 +1,9 @@
 # &lt;my-element&gt;
 
-> TODO: Write a project description
+> This is a bare minimum custom element starter-kit.
+>
+> Looking for a working example? Check [Hello World](https://github.com/webcomponents/hello-world-polymer)
+> element using [Polymer](http://www.polymer-project.org/).
 
 ## Demo
 
@@ -34,9 +37,21 @@
 
 ## Options
 
-Attribute  | Options                   | Default             | Description
----        | ---                       | ---                 | ---
-`name`     | *string*                  | `World`             | Lorem ipsum
+Attribute     | Options     | Default      | Description
+---           | ---         | ---          | ---
+`foo`         | *string*    | `bar`        | Lorem ipsum dolor.
+
+## Methods
+
+Method        | Parameters   | Returns     | Description
+---           | ---          | ---         | ---
+`unicorn()`   | None.        | Nothing.    | Magic stuff appears.
+
+## Events
+
+Event         | Description
+---           | ---
+`onsomething` | Triggers when something happens.
 
 ## Development
 
