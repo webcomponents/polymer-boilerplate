@@ -1,9 +1,8 @@
 # &lt;my-element&gt;
 
-> This is a bare minimum custom element starter-kit.
+> A bare minimum custom element starter-kit using [Polymer](http://www.polymer-project.org/).
 >
-> Looking for a working example? Check [Hello World](https://github.com/webcomponents/hello-world-polymer)
-> element using [Polymer](http://www.polymer-project.org/).
+> Looking for a working example? Check [hello-world-polymer](https://github.com/webcomponents/hello-world-polymer).
 
 ## Demo
 
@@ -14,7 +13,7 @@
 Install the component using [Bower](http://bower.io/):
 
 ```sh
-$ bower install my-element --save
+$ bower install polymer-boilerplate --save
 ```
 
 Or [download as ZIP](https://github.com/webcomponents/polymer-boilerplate/archive/gh-pages.zip).
@@ -30,7 +29,7 @@ Or [download as ZIP](https://github.com/webcomponents/polymer-boilerplate/archiv
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/my-element/dist/my-element.html">
+    <link rel="import" href="bower_components/polymer-boilerplate/dist/my-element.html">
     ```
 
 3. Start using it!
