@@ -6,17 +6,17 @@
 
 ## Demo
 
-[Check it live!](http://webcomponents.github.io/polymer-boilerplate)
+[Check it live!](http://my-user.github.io/my-repo)
 
 ## Install
 
 Install the component using [Bower](http://bower.io/):
 
 ```sh
-$ bower install polymer-boilerplate --save
+$ bower install my-repo --save
 ```
 
-Or [download as ZIP](https://github.com/webcomponents/polymer-boilerplate/archive/master.zip).
+Or [download as ZIP](https://github.com/my-user/my-repo/archive/master.zip).
 
 ## Usage
 
@@ -29,7 +29,7 @@ Or [download as ZIP](https://github.com/webcomponents/polymer-boilerplate/archiv
 2. Import Custom Element:
 
     ```html
-    <link rel="import" href="bower_components/polymer-boilerplate/dist/my-element.html">
+    <link rel="import" href="bower_components/my-repo/dist/my-element.html">
     ```
 
 3. Start using it!
@@ -100,7 +100,7 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
 
 ## History
 
-For detailed changelog, check [Releases](https://github.com/webcomponents/polymer-boilerplate/releases).
+For detailed changelog, check [Releases](https://github.com/my-user/my-repo/releases).
 
 ## License
 
