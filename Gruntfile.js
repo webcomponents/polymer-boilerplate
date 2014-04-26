@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
     grunt.initConfig({
-        connect: {
+        'connect': {
             demo: {
                 options: {
                     open: true,
@@ -9,7 +9,17 @@ module.exports = function(grunt) {
                 }
             }
         },
-        replace: {
+        'gh-pages': {
+            options: {
+                clone: 'bower_components/polymer-boilerplate'
+            },
+            src: [
+                'bower_components/**/*',
+                '!bower_components/polymer-boilerplate/**/*',
+                'demo/*', 'src/*', 'index.html'
+            ]
+        },
+        'replace': {
             example: {
                 src: ['src/*'],
                 dest: 'dist/',
@@ -22,9 +32,11 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-gh-pages');
     grunt.loadNpmTasks('grunt-text-replace');
 
-    grunt.registerTask('default', ['connect']);
-    grunt.registerTask('build', ['replace']);
+    grunt.registerTask('build',  ['replace']);
+    grunt.registerTask('deploy', ['gh-pages']);
+    grunt.registerTask('server', ['connect']);
 
 };
