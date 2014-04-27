@@ -1,4 +1,4 @@
-# &lt;my-element&gt;
+# &lt;my-repo&gt;
 
 > A bare minimum custom element starter-kit using [Polymer](http://www.polymer-project.org/).
 >
