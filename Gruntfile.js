@@ -11,11 +11,11 @@ module.exports = function(grunt) {
         },
         'gh-pages': {
             options: {
-                clone: 'bower_components/polymer-boilerplate'
+                clone: 'bower_components/my-repo'
             },
             src: [
                 'bower_components/**/*',
-                '!bower_components/polymer-boilerplate/**/*',
+                '!bower_components/my-repo/**/*',
                 'demo/*', 'src/*', 'index.html'
             ]
         },
