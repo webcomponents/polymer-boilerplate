@@ -1,10 +1,7 @@
 {
     "name": "my-repo",
     "version": "0.0.0",
-    "description": "TODO: Write a project description",
-    "authors": [
-        "TODO: Write your name"
-    ],
+    "description": "My awesome Custom Element",
     "license": "MIT",
     "main": "dist/my-element.html",
     "keywords": [
