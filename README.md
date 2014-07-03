@@ -90,6 +90,12 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
     $ grunt deploy
     ```
 
+* To rename some placeholders. You need to change placeholder in `Gruntfile.js` before executing the command.
+
+    ```sh
+    $ grunt rename
+    ```
+
 ## Contributing
 
 1. Fork it!
