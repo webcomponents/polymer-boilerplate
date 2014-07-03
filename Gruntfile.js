@@ -20,12 +20,28 @@ module.exports = function(grunt) {
             ]
         },
         'replace': {
-            example: {
+            path: {
                 src: ['src/*'],
                 dest: 'dist/',
                 replacements: [{
                     from: 'bower_components',
                     to: '..'
+                }]
+            },
+            rename: {
+                src: ['dist/*', 'src/*', 'index.html', 'Gruntfile.js', 'README.md', 'bower.json'],
+                overwrite: true,
+                replacements: [{
+                    from: 'my-repo',
+                    to: 'my-repo' // write your repository
+                },
+                {
+                    from: 'my-user',
+                    to: 'my-user' // write your name
+                },
+                {
+                    from: 'my-element',
+                    to: 'my-element' // write your element
                 }]
             }
         }
@@ -35,8 +51,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-gh-pages');
     grunt.loadNpmTasks('grunt-text-replace');
 
-    grunt.registerTask('build',  ['replace']);
+    grunt.registerTask('build',  ['replace:path']);
     grunt.registerTask('deploy', ['gh-pages']);
     grunt.registerTask('server', ['connect']);
+    grunt.registerTask('rename', ['replace:rename']);
 
 };
