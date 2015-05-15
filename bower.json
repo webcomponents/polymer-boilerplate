@@ -3,14 +3,13 @@
     "version": "0.0.0",
     "description": "My awesome Custom Element",
     "license": "MIT",
-    "main": "dist/my-element.html",
+    "main": "my-element.html",
     "keywords": [
         "polymer",
         "web-components"
     ],
     "ignore": [
         "**/.*",
-        "node_modules",
         "bower_components"
     ],
     "dependencies": {

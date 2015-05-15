@@ -31,7 +31,7 @@ Or [download as ZIP](https://github.com/my-user/my-repo/archive/master.zip).
 2. Import custom element:
 
     ```html
-    <link rel="import" href="bower_components/my-repo/dist/my-element.html">
+    <link rel="import" href="bower_components/my-repo/my-element.html">
     ```
 
 3. Start using it!
@@ -62,34 +62,22 @@ Event         | Description
 
 In order to run it locally you'll need to fetch some dependencies and a basic server setup.
 
-* Install [Bower](http://bower.io/) & [Grunt](http://gruntjs.com/):
+1. Install [bower](http://bower.io/) & [polyserve](https://npmjs.com/polyserve):
 
     ```sh
-    $ [sudo] npm install -g bower grunt-cli
+    $ npm install -g bower polyserve
     ```
 
-* Install local dependencies:
+2. Install local dependencies:
 
     ```sh
-    $ bower install && npm install
+    $ bower install
     ```
 
-* To test your project, start the development server and open `http://localhost:8000`.
+3. Start development server and open `http://localhost:8080/components/my-repo/`.
 
     ```sh
-    $ grunt server
-    ```
-
-* To build the distribution files before releasing a new version.
-
-    ```sh
-    $ grunt build
-    ```
-
-* To provide a live demo, send everything to `gh-pages` branch.
-
-    ```sh
-    $ grunt deploy
+    $ polyserve
     ```
 
 ## History
