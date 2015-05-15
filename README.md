@@ -22,13 +22,13 @@ Or [download as ZIP](https://github.com/my-user/my-repo/archive/master.zip).
 
 ## Usage
 
-1. Import Web Components' polyfill:
+1. Import polyfill:
 
     ```html
     <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
     ```
 
-2. Import Custom Element:
+2. Import custom element:
 
     ```html
     <link rel="import" href="bower_components/my-repo/dist/my-element.html">
@@ -91,14 +91,6 @@ In order to run it locally you'll need to fetch some dependencies and a basic se
     ```sh
     $ grunt deploy
     ```
-
-## Contributing
-
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
 
 ## History
 
